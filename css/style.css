@@ -1,0 +1,12 @@
+header {
+    background-color: #F7F9FA;
+    height: 4rem;
+}
+
+.search {
+    background-color: #E5E5E5;
+}
+
+.search i {
+    font-size: 15px;
+}
