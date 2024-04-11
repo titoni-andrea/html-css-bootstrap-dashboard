@@ -10,3 +10,20 @@ header {
 .search i {
     font-size: 15px;
 }
+
+.notifiche {
+    color: #E68107;
+}
+
+
+.contenuto {
+    height: calc(100vh - 4rem);
+}
+
+.sidebar {
+    background-color: #041E34;
+}
+
+.color_text_sidebar {
+    color: #FEFEFF;
+}
