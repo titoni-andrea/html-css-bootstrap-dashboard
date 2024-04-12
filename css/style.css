@@ -31,3 +31,40 @@ header {
 .color_badge_int {
     background-color: #175BBA;
 }
+
+.color-title-section {
+    background-color: #F7F7F7;
+}
+
+.lg-60 {
+    width: 55%;
+}
+
+.lg-10 {
+    width: 12%;
+}
+
+.lg-5 {
+    width: 7%;
+}
+
+.img-table {
+    width: 28px;
+}
+
+.grey {
+    color: grey;
+}
+
+.txt-nascosto {
+    display: none;
+}
+
+.faq:hover .txt-nascosto{
+    background-color: blue;
+}
+
+.faq:hover {
+
+    background-color: green;
+}

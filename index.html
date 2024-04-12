@@ -29,39 +29,58 @@
                 <i class="fa-solid fa-circle-question"></i>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
                 <i class="fa-solid fa-bell notifiche"></i>
+
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </header>
 
     <!-- CONTENUTO -->
     <div class="container-fluid contenuto">
-        <div class="row h-100">
+        <div class="row h-100 ">
 
             <!-- SIDEBAR -->
             <div class="col-lg-1 py-4 px-3 sidebar">
-                <div class="col-lg-12 d-flex gap-3 align-items-center mb-3">
-                    <i class="fa-solid fa-house color_text_sidebar"></i>
-                    <p class="color_text_sidebar m-0">Home</p>
-                </div>
-                <div class="col-lg-12 d-flex gap-3 align-items-center mb-3">
-                    <i class="fa-solid fa-chart-simple color_text_sidebar"></i>
-                    <p class="color_text_sidebar m-0">Stats</p>
-                </div>
-                <div class="col-lg-12 d-flex gap-3 align-items-center mb-3">
-                    <i class="fa-solid fa-signal color_text_sidebar"></i>
-                    <p class="color_text_sidebar m-0">Signals</p>
-                </div>
-                <div class="d-flex align-items-end">
+                <div class="col-lg-12">
                     <div class="col-lg-12 d-flex gap-3 align-items-center mb-3">
-                        <i class="fa-solid fa-gear color_text_sidebar"></i>
-                        <p class="color_text_sidebar m-0">Admin</p>
+                        <i class="fa-solid fa-house color_text_sidebar"></i>
+                        <p class="color_text_sidebar m-0">Home</p>
+                    </div>
+                    <div class="col-lg-12 d-flex gap-3 align-items-center mb-3">
+                        <i class="fa-solid fa-chart-simple color_text_sidebar"></i>
+                        <p class="color_text_sidebar m-0">Stats</p>
+                    </div>
+                    <div class="col-lg-12 d-flex gap-3 align-items-center mb-3">
+                        <i class="fa-solid fa-signal color_text_sidebar"></i>
+                        <p class="color_text_sidebar m-0">Signals</p>
                     </div>
                 </div>
+                <div class="col-lg-12 d-flex align-items-end">
+                    <div class="row">
+                        <div class="col-lg-12 d-flex gap-3 align-items-center mb-3">
+                            <i class="fa-solid fa-signal color_text_sidebar"></i>
+                            <p class="color_text_sidebar m-0">Admin</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- CONTENUTI -->
-            <div class="col-lg-11">
-                <div class="row">
+            <div class="col-lg-11 overflow-auto">
+                <div class="row overflow-auto">
 
                     <!-- INTESTAZIONE CONTENUTI -->
                     <div class="col-lg-12 bg-primary py-3 px-2">
@@ -86,20 +105,246 @@
                             <div class="col-lg-2 d-flex align-items-start">
                                 <div class="d-flex align-items-center gap-3">
                                     <p class="color_text_sidebar m-0">Nuovo Studente</p>
-                                <button class="btn btn-outline-light pt-0 pb-1 px-2"><p class="m-0 p-0">+</p></button>
+                                    <button class="btn btn-outline-light pt-0 pb-1 px-2" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                                        aria-controls="offcanvasExample">
+                                        <p class="m-0 p-0">+</p>
+                                    </button>
+
+
+
+
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                                        aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div>
+                                                Some text as placeholder. In real life you can have the elements you
+                                                have chosen. Like, text, images, lists, etc.
+                                            </div>
+                                            <div class="dropdown mt-3">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown">
+                                                    Dropdown button
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- PRIMA SEZIONE DI CONTENUTI -->
-                    <div class="col-lg-12 py-3 px-2">
-                        <div class="col-lg-8">
-                            <div class="row">
+                    <div class="col-lg-12 py-3 ps-2 pe-0">
+                        <div class="row gx-2">
+                            <!-- TABELLA PROSSIME CLASSI -->
+                            <div class="col-lg-8 ">
+                                <div class="row gx-0 border rounded">
+                                    <div class="cl-lg-12 px-2 color-title-section rounded-top border-bottom">
+                                        <p class=" fs-3 mb-2 ">Prossime classi</p>
+                                    </div>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="lg-60">Nome</th>
+                                                <th class="lg-10">Data inizio</th>
+                                                <th class="lg-5">ROI</th>
+                                                <th class="lg-5">Stato</th>
+                                                <th class="lg-10">Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><img class="img-table me-2" src="img/class-avatar.jpg"
+                                                        alt="">Classe 75</th>
+                                                <td>15 feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge color_badge_int rounded-pill">Done</span></td>
+                                                <td><i class="fa-solid fa-pen border border-2 p-2 rounded grey"></i>
+                                                    <i class="fa-solid fa-trash border border-2 p-2 rounded grey"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img class="img-table me-2" src="img/class-avatar.jpg"
+                                                        alt="">Classe 75</th>
+                                                <td>15 feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge color_badge_int rounded-pill">Done</span></td>
+                                                <td><i class="fa-solid fa-pen border border-2 p-2 rounded grey"></i>
+                                                    <i class="fa-solid fa-trash border border-2 p-2 rounded grey"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img class="img-table me-2" src="img/class-avatar.jpg"
+                                                        alt="">Classe 75</th>
+                                                <td>15 feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge color_badge_int rounded-pill">Done</span></td>
+                                                <td><i class="fa-solid fa-pen border border-2 p-2 rounded grey"></i>
+                                                    <i class="fa-solid fa-trash border border-2 p-2 rounded grey"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img class="img-table me-2" src="img/class-avatar.jpg"
+                                                        alt="">Classe 75</th>
+                                                <td>15 feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge color_badge_int rounded-pill">Done</span></td>
+                                                <td><i class="fa-solid fa-pen border border-2 p-2 rounded grey"></i>
+                                                    <i class="fa-solid fa-trash border border-2 p-2 rounded grey"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img class="img-table me-2" src="img/class-avatar.jpg"
+                                                        alt="">Classe 75</th>
+                                                <td>15 feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge color_badge_int rounded-pill">Done</span></td>
+                                                <td><i class="fa-solid fa-pen border border-2 p-2 rounded grey"></i>
+                                                    <i class="fa-solid fa-trash border border-2 p-2 rounded grey"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img class="img-table me-2" src="img/class-avatar.jpg"
+                                                        alt="">Classe 75</th>
+                                                <td>15 feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge color_badge_int rounded-pill">Done</span></td>
+                                                <td><i class="fa-solid fa-pen border border-2 p-2 rounded grey"></i>
+                                                    <i class="fa-solid fa-trash border border-2 p-2 rounded grey"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img class="img-table me-2" src="img/class-avatar.jpg"
+                                                        alt="">Classe 75</th>
+                                                <td>15 feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge color_badge_int rounded-pill">Done</span></td>
+                                                <td><i class="fa-solid fa-pen border border-2 p-2 rounded grey"></i>
+                                                    <i class="fa-solid fa-trash border border-2 p-2 rounded grey"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img class="img-table me-2" src="img/class-avatar.jpg"
+                                                        alt="">Classe 75</th>
+                                                <td>15 feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge color_badge_int rounded-pill">Done</span></td>
+                                                <td><i class="fa-solid fa-pen border border-2 p-2 rounded grey"></i>
+                                                    <i class="fa-solid fa-trash border border-2 p-2 rounded grey"></i>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- SEZIONE FAQ -->
+                                <div class="row gx-0 border rounded mt-3">
+                                    <div class="cl-lg-12 px-2 color-title-section rounded-top border-bottom">
+                                        <p class=" fs-3 mb-2 ">F.A.Q.</p>
+                                    </div>
+                                    <!-- DOMANDE -->
+                                    <div
+                                        class="col-lg-12 px-4 pt-3 d-flex align-items-center justify-content-between faq">
+                                        <p class="mb-2">Come aggiungere un nuovo stundente</p>
+                                        <i class="fa-solid fa-chevron-down mb-2"></i>
+                                    </div>
+                                    <div class="col-lg-12 px-4">
+                                        <p class="txt-nascosto">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Beatae
+                                            necessitatibus
+                                            iste totam dicta ipsam illo fugiat sequi odit deserunt perspiciatis.</p>
+                                        <hr class="mt-2 mb-0">
+                                    </div>
+                                    <div
+                                        class="col-lg-12 px-4 pt-3 d-flex align-items-center justify-content-between faq">
+                                        <p class="mb-2">Come posso accedere alle informazioni del mio account</p>
+                                        <i class="fa-solid fa-chevron-down mb-2"></i>
+                                    </div>
+                                    <div class="col-lg-12 px-4">
+                                        <p class="txt-nascosto">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Beatae
+                                            necessitatibus
+                                            iste totam dicta ipsam illo fugiat sequi odit deserunt perspiciatis.</p>
+                                        <hr class="mt-2 mb-0">
+                                    </div>
+                                    <div
+                                        class="col-lg-12 px-4 pt-3 d-flex align-items-center justify-content-between faq">
+                                        <p class="mb-2">Come aggiungere un nuovo stundente</p>
+                                        <i class="fa-solid fa-chevron-down mb-2"></i>
+                                    </div>
+                                    <div class="col-lg-12 px-4 pb-3">
+                                        <p class="txt-nascosto">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Beatae
+                                            necessitatibus
+                                            iste totam dicta ipsam illo fugiat sequi odit deserunt perspiciatis.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SECONDA SEZIONE -->
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <!-- TODO -->
+                                    <div class="col-lg-12 border gx-5 ms-2 px-0 rounded">
+                                        <div class="col-lg-12">
+                                            <div class="cl-lg-12 px-2 color-title-section rounded-top border-bottom">
+                                                <p class=" fs-3 mb-2 ">Todo</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-1"></div>
+                                            <div class="col-lg-10 p-0 my-3 border rounded">
+                                                <input class="ms-3" type="checkbox">
+                                                <label class="mt-2" for="vehicle1"> Kickoff nuove classi</label><br>
+                                                <hr class="my-2">
+                                                <input class="ms-3" type="checkbox">
+                                                <label for="vehicle2"> Lezione su Bootstrap 5 in classe #75</label><br>
+                                                <hr class="my-2">
+                                                <input class="ms-3" type="checkbox">
+                                                <label class="mb-2" for="vehicle3"> Controllare username github
+                                                    studenti</label><br>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 border gx-5 ms-2 mt-3 px-0 rounded py-3 px-4">
+                                        <div class="row">
+                                            <div class="col-lg-12 border rounded">
+                                                <img class="w-100" src="img/stats.jpeg" alt="">
+                                                <p class=" fs-4 mb-1 ">Utenti attivi</p>
+                                                <p class="">Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                                </p>
+                                                <hr class="my-2">
+                                                <p class="m-0">Gennaio 1200</p>
+                                                <hr class="my-2">
+                                                <p class="m-0">Febbraio 800</p>
+                                                <hr class="my-2">
+                                                <p class="m-0">Marzo 1500</p>
+                                                <hr class="my-2">
+                                                <a class="mb-2" href="#">Visualizza report approfondito</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
-                        </div>
-                        <div class="col-lg-4">
+
 
                         </div>
                     </div>
@@ -107,6 +352,12 @@
             </div>
         </div>
     </div>
+    <script type="module">
+        import { Toast } from 'bootstrap.esm.min.js'
+
+        Array.from(document.querySelectorAll('.toast'))
+            .forEach(toastNode => new Toast(toastNode))
+    </script>
 </body>
 
 </html>
